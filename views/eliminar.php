@@ -7,5 +7,9 @@
     $resultado = mysqli_query($conexion, $sql);
     if ($resultado === TRUE) {
     }
-   header('location: ../views/index.php')
+    else{echo
+        alert('se elimino el archivo. ');
+        location.assign('../views/index.php');
+    }
+ 
 ?>
